@@ -1,0 +1,6 @@
+alias g="git"
+alias h="history"
+alias v="vim"
+alias s="subl ."
+alias o="open"
+alias oo="open ."
