@@ -1,0 +1,5 @@
+# Make vim the default editor
+export EDITOR="vim"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
