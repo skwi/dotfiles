@@ -20,3 +20,9 @@ shopt -s cdspell
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Color for LS command
+if [ -x /usr/bin/dircolors ]; then
+    eval "`dircolors -b`"
+	alias ls='ls --color=auto'
+fi
