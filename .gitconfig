@@ -25,6 +25,16 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = vimdiff
+
+[alias]
+        co = checkout
+        ds = diff --staged
+        stat = status -sb
+        plog = log --graph --pretty=format':%C(yellow)%h %C(red)%ad %Cblue%d %C(green)[%an]%Creset %s %C(red) %Creset' --date=short
+        amend = commit --amend -C HEAD
+        ignore = update-index --assume-unchanged
+        unignore = update-index --no-assume-unchanged
 
 # URL shorthands
 [url "git@github.com:"]
