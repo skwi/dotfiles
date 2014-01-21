@@ -44,7 +44,7 @@ set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.br
 set title " Show the filename in the window titlebar.
 set ttyfast " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
-set noundofile "Prevent .un~ files
+silent! set noundofile "Prevent .un~ files
 set noswapfile "Prevent .swp files
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
 set wildchar=<TAB> " Character for CLI expansion (TAB-completion).
@@ -116,8 +116,8 @@ imap <PageUp> <C-O><C-U>
 imap <PageDown> <C-O><C-D>
 
 " Set relative line numbers
-set relativenumber " Use relative line numbers. Current line is still in status bar.
-au BufReadPost,BufNewFile * set relativenumber
+silent! set relativenumber " Use relative line numbers. Current line is still in status bar.
+au BufReadPost,BufNewFile * silent! set relativenumber
 
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
