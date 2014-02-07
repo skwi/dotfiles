@@ -7,7 +7,7 @@ alias oo="open ."
 
 # some more ls aliases
 alias ll='ls -l'
-alias l='ls -aFhlG'
+alias l='ls -AFhl'
 
 # symfony
 alias sf='php app/console'
