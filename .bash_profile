@@ -20,6 +20,8 @@ shopt -s cdspell
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+[ -f ~/.git-completion.sh ] && . ~/.git-completion.sh
+[ -f ~/.git-flow-completion.sh ] && . ~/.git-flow-completion.sh
 
 # Color for LS command
 if [ -x /usr/bin/dircolors ]; then
