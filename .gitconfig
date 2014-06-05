@@ -32,6 +32,7 @@
         ds = diff --staged
         stat = status -sb
         plog = log --graph --pretty=format':%C(yellow)%h %C(red)%ad %Cblue%d %C(green)[%an]%Creset %s %C(red) %Creset' --date=short
+        tags = tag -l
         amend = commit --amend -C HEAD
         ignore = update-index --assume-unchanged
         unignore = update-index --no-assume-unchanged
