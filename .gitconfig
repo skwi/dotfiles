@@ -53,6 +53,10 @@
 
 [push]
 	default = matching
+
+[init]
+	templatedir = ~/.git_template
+
 [core]
 	excludesfile = ~/.gitignore
 [difftool "sourcetree"]
