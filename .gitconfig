@@ -54,7 +54,7 @@
 [push]
 	default = matching
 [core]
-	excludesfile = /Users/cedricspalvieri/.gitignore_global
+	excludesfile = ~/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
