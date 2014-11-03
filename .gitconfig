@@ -29,7 +29,8 @@
 
 [alias]
         co = checkout
-        ds = diff --staged
+        sdiff = diff --staged
+        wdiff = diff --color-words
         stat = status -sb
         plog = log --graph --pretty=format':%C(yellow)%h %C(red)%ad %Cblue%d %C(green)[%an]%Creset %s %C(red) %Creset' --date=short
         tags = tag -l --column=auto
@@ -65,3 +66,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[status]
+	showUntrackedFiles = all
+[diff]
+	wordRegex = .
