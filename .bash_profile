@@ -4,10 +4,17 @@ export PATH="$HOME/bin:$PATH"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_git,bash_prompt,exports,aliases,functions,extra,bash_local}; do
+for file in ~/dotfiles/.{path,bash_git,bash_prompt,exports,aliases,functions,extra}; do
         [ -r "$file" ] && source "$file"
 done
 unset file
+source ~/.bash_local
+rm -Rf ~/.vim && cp -R ~/dotfiles/.vim ~/.vim
+rm -Rf ~/.vimrc && cp -R ~/dotfiles/.vimrc ~/.vimrc
+
+rm -Rf ~/.gitconfig && cp -R ~/dotfiles/.gitconfig ~/.gitconfig
+rm -Rf ~/.gitignore && cp -R ~/dotfiles/.gitignore ~/.gitignore
+
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
@@ -20,8 +27,8 @@ shopt -s cdspell
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
-[ -f ~/.git-completion.sh ] && . ~/.git-completion.sh
-[ -f ~/.git-flow-completion.sh ] && . ~/.git-flow-completion.sh
+[ -f ~/dotfiles/.git-completion.sh ] && . ~/dotfiles/.git-completion.sh
+[ -f ~/dotfiles/.git-flow-completion.sh ] && . ~/dotfiles/.git-flow-completion.sh
 
 # Color for LS command
 if [ -x /usr/bin/dircolors ]; then
