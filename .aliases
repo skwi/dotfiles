@@ -11,3 +11,6 @@ alias l='ls -aFhlG'
 
 # Symfony 2 
 alias sf='php app/console'
+alias dev='php app/console --env=dev'
+alias prod='php app/console --env=prod'
+
