@@ -4,10 +4,14 @@ alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias fuck="sudo !!"
 
 # some more ls aliases
-alias ll='ls -l'
+alias ll='ls -lh'
 alias l='ls -aFhlG'
+
+# disk space usage
+alias ducks='du -cks * | sort -rn | head'
 
 # Symfony 2 
 alias sf='php app/console'
