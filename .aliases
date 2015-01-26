@@ -11,7 +11,7 @@ alias ll='ls -lh'
 alias l='ls -aFhlG'
 
 # disk space usage
-alias ducks='du -cks * | sort -rn | head'
+alias ducks='du -cks -h * | sort -rn | head'
 
 # Symfony 2 
 alias sf='php app/console'
