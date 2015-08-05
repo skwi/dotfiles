@@ -37,6 +37,8 @@
         amend = commit --amend -C HEAD
         ignore = update-index --assume-unchanged
         unignore = update-index --no-assume-unchanged
+        ignore-filemode = config core.fileMode false
+        unignore-filemode = config core.fileMode true
 
 # URL shorthands
 [url "git@github.com:"]
@@ -53,7 +55,7 @@
 	insteadOf = "gist:"
 
 [push]
-	default = matching
+	default = upstream
 
 [init]
 	templatedir = ~/.git_template
@@ -72,3 +74,5 @@
 	wordRegex = .
 [http]
 	postBuffer = 524288000
+[pull]
+	rebase = preserve
