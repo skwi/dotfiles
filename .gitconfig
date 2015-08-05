@@ -70,3 +70,5 @@
 	showUntrackedFiles = all
 [diff]
 	wordRegex = .
+[http]
+	postBuffer = 524288000
