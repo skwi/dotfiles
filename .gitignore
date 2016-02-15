@@ -39,3 +39,7 @@ Desktop.ini
 # IDE files #
 #############
 .idea
+
+# PHP Projects #
+################
+composer.phar
