@@ -18,3 +18,6 @@ alias sf='php app/console'
 alias dev='php app/console --env=dev'
 alias prod='php app/console --env=prod'
 
+# NPM
+alias grunt='$(pwd)/node_modules/.bin/grunt'
+alias bower='$(pwd)/node_modules/.bin/bower'
