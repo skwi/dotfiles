@@ -39,6 +39,8 @@ Desktop.ini
 # IDE files #
 #############
 .idea
+*.sublime-project
+*.sublime-workspace
 
 # PHP Projects #
 ################
