@@ -24,5 +24,10 @@ alias sfserv='php bin/console server:run --env=dev'
 alias grunt='$(pwd)/node_modules/.bin/grunt'
 alias bower='$(pwd)/node_modules/.bin/bower'
 
+#docker
+alias dup='docker-compose up -d'
+alias stop-docker='docker stop $(docker ps -q)'
+alias clean-docker='docker stop $(docker ps -q) && docker rm $(docker ps -aq)'
+
 # Misc
 alias meteo='curl -4 wttr.in/Lyon'
