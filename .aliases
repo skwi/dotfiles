@@ -14,10 +14,11 @@ alias l='ls -aFhlG'
 alias ducks='du -cks * | sort -rn | head'
 alias duh='du -cksh *'
 
-# Symfony 2 
-alias sf='php app/console'
-alias dev='php app/console --env=dev'
-alias prod='php app/console --env=prod'
+# Symfony
+alias sf='php bin/console'
+alias dev='php bin/console --env=dev'
+alias prod='php bin/console --env=prod'
+alias sfserv='php bin/console server:run --env=dev'
 
 # NPM
 alias grunt='$(pwd)/node_modules/.bin/grunt'
