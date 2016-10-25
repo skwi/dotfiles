@@ -31,3 +31,6 @@ alias clean-docker='docker stop $(docker ps -q) && docker rm $(docker ps -aq)'
 
 # Misc
 alias meteo='curl -4 wttr.in/Lyon'
+gifsearch() { 
+    open "https://google.com/search?q=$1&tbm=isch&tbs=itp:animated" 
+}
