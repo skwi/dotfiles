@@ -27,7 +27,7 @@ alias bower='$(pwd)/node_modules/.bin/bower'
 #docker
 alias dup='docker-compose up -d'
 alias stop-docker='docker stop $(docker ps -q)'
-alias clean-docker='docker stop $(docker ps -q) && docker rm $(docker ps -aq)'
+alias clean-docker='docker stop $(docker ps -q) && docker rm $(docker ps -aq) &&  docker system prune --force'
 
 # Misc
 alias meteo='curl -4 wttr.in/Lyon'
