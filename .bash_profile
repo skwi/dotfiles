@@ -8,7 +8,6 @@ for file in ~/dotfiles/.{path,bash_git,bash_prompt,exports,aliases,functions,ext
         [ -r "$file" ] && source "$file"
 done
 unset file
-source ~/.bash_local
 rm -Rf ~/.vim && cp -R ~/dotfiles/.vim ~/.vim
 rm -Rf ~/.vimrc && cp -R ~/dotfiles/.vimrc ~/.vimrc
 
@@ -28,6 +27,7 @@ shopt -s cdspell
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 [ -f ~/dotfiles/.git-completion.sh ] && . ~/dotfiles/.git-completion.sh
+[ -d /usr/local/etc/bash_completion.d ] && source /usr/local/etc/bash_completion.d/*
 
 # Color for LS command
 if [ -x /usr/bin/dircolors ]; then
