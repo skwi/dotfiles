@@ -1,7 +1,6 @@
 alias g="git"
 alias h="history"
 alias v="vim"
-alias s="subl ."
 alias o="open"
 alias oo="open ."
 alias fuck='sudo $(fc -ln -1)' 
@@ -16,17 +15,8 @@ alias duh='du -cksh *'
 
 # Symfony
 alias sf='php bin/console'
-alias dev='php bin/console --env=dev'
-alias prod='php bin/console --env=prod'
-alias sfserv='php bin/console server:run --env=dev'
-
-# NPM
-alias grunt='$(pwd)/node_modules/.bin/grunt'
-alias bower='$(pwd)/node_modules/.bin/bower'
 
 #docker
-alias dup='docker-compose up -d'
-alias stop-docker='docker stop $(docker ps -q)'
 alias clean-docker='docker stop $(docker ps -q) && docker rm $(docker ps -aq) &&  docker system prune --force'
 
 # Misc
