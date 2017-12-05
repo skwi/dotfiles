@@ -1,0 +1,1 @@
+/Users/skwi/.config/fisherman/bass/functions/bass.fish

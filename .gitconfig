@@ -28,20 +28,21 @@
 	tool = vimdiff
 
 [alias]
-        alias = config --get-regexp ^alias\\.
-        co = checkout
-        sdiff = diff --staged
-        wdiff = diff --color-words
-        stat = status -sb
-        plog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\" 
-        tags = tag -l --column=auto
-        amend = commit --amend -C HEAD
-        real-blame = log -p -M --follow --stat -- 
-        ignore = update-index --assume-unchanged
-        unignore = update-index --no-assume-unchanged
-        ignore-filemode = config core.fileMode false
-        unignore-filemode = config core.fileMode true
-        please = push --force-with-lease
+	alias = config --get-regexp ^alias\\.
+	co = checkout
+	br = branch -vv
+	sdiff = diff --staged
+	wdiff = diff --color-words
+	stat = status -sb
+	plog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\" 
+	tags = tag -l --column=auto
+	amend = commit --amend -C HEAD
+	real-blame = log -p -M --follow --stat -- 
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	ignore-filemode = config core.fileMode false
+	unignore-filemode = config core.fileMode true
+	please = push --force-with-lease
 
 # URL shorthands
 [url "git@github.com:"]

@@ -1,0 +1,1 @@
+/Users/skwi/.config/fisherman/nvm/functions/yarn.fish
