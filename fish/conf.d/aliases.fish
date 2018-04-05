@@ -18,6 +18,3 @@ alias mysql-dockerized='docker run --name one-shot-mysql -p 3306:3306 -e MYSQL_R
 
 # Misc
 alias meteo='curl -4 "wttr.in/Lyon?2nQ"'
-function gifsearch 
-    open "https://google.com/search?q=$1&tbm=isch&tbs=itp:animated" 
-end
