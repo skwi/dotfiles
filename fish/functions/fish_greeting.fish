@@ -19,8 +19,8 @@ function fish_greeting -d "Hi Skwi !"
     # Disk space
     set space (df -h / | cut -c-41)
     set spaceData (echo $space | sed 's/Filesystem     Size   Used  Avail Capacit \/dev\/disk1s1//g')
-    set spacePercent (string match --regex '([0-9]{2})%' '113Gi   92Gi   12Gi    89%' | sed -n 2p)
-    set spaceText (string match --regex -a '([0-9]+)[A-Za-z]{2}' '113Gi   92Gi   12Gi    89%' |  sed -n 5p)
+    set spacePercent (string match --regex '([0-9]{2})%' $spaceData | sed -n 2p)
+    set spaceText (string match --regex -a '([0-9]+)[A-Za-z]{2}' $spaceData | sed -n 5p)
     set spaceColor normal
     if [ $spacePercent -gt 70 ]
         set spaceColor $neutralColor
@@ -38,6 +38,10 @@ function fish_greeting -d "Hi Skwi !"
     echo 'Free disk space: '(set_color $spaceColor)$spaceText' ('$spacePercent'%)'
     set_color normal
     
+    if [ $spacePercent -gt 90 ]
+        echo 'ctrl+click on /System/Library/CoreServices/Applications/Storage\ Management.app to manage space usage.'
+    end
+
     # Devtools versions
     echo 'PHP: '(php -v | head -1 | cut -c5-10)' - NPM: '(npm -v)' - Node: '(node -v | cut -c2-) 
     
