@@ -13,6 +13,9 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
+# Docker #
+##########
+/.docker-sync/
 
 # IDE files #
 #############
@@ -20,6 +23,12 @@ Desktop.ini
 *.sublime-project
 *.sublime-workspace
 .vscode
+
 # PHP Projects #
 ################
 composer.phar
+
+# Compass #
+###########
+/config.rb
+
