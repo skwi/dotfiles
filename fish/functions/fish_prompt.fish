@@ -1,6 +1,6 @@
 function show_pwd -d "Show the current directory"
   set -l pwd (prompt_pwd)
-  segment white 1b402c " $pwd "
+  segment white 73508a " $pwd "
 end
 
 function show_user -d "Show user"

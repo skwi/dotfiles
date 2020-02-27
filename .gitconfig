@@ -59,24 +59,17 @@
 	insteadOf = "gist:"
 
 [push]
-	default = upstream
+	default = simple
+[pull]
+	rebase = preserve
 
 [init]
 	templatedir = ~/.git_template
-
 [core]
 	excludesfile = ~/.gitignore
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [status]
 	showUntrackedFiles = all
 [diff]
 	wordRegex = .
 [http]
 	postBuffer = 524288000
-[pull]
-	rebase = preserve

@@ -15,6 +15,7 @@ function show_result -d "Shows the result of the previous command, or the durati
             # segment_close
         end
     else if test $status_copy -ne 0
+        manage_error $status_copy
         segment_right white f00 " $status_copy "
         # segment_close
     else
@@ -79,7 +80,7 @@ function show_git -d "Display the current git state"
 
             # Check if there's any commit in the repo
             set -l empty 0
-            git rev-parse --quiet --verify HEAD >/dev/null ^&1
+            git rev-parse --quiet --verify HEAD >/dev/null 2>&1
             or set empty 1
 
             set -l target

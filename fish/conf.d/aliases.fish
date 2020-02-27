@@ -1,9 +1,7 @@
-# fuck this
-alias fuck='sudo !!'
-
 # disk space usage
 alias ducks='du -cks * | sort -rn | head'
 alias duh='du -cksh *'
+alias myip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
 
 #docker
 alias stop-docker='docker stop (docker ps -q)'
